@@ -1,195 +1,50 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: white;
-    background: url('wallpapers.jpg') no-repeat center center/cover;
+    background-color: rgb(250, 242, 242);
 }
 
-.scroll-line {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 5px;
-    background-color: #FF6347;
-    width: 0%;
-    z-index: 1000;
-    transition: width 0.3s ease;
-}
-
-.centered-text {
-    text-align: center;
-    padding: 100px 20px;
-    color: white;
-    margin-top: 35px;
-}
-
-.additional-content {
-    margin: 70px auto;
-    padding: 20px;
-    max-width: 800px;
-}
-
-.image-container {
+.grid {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    height: 420px;
+    width: 420px;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
     justify-content: center;
-    margin: 20px auto;
-    max-width: 1200px;
+    align-content: center;
 }
 
-.image-box {
-    flex: 1;
-    min-width: 45%;
-}
-
-.image-box img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;  /* Optional: adds rounded corners */
-}
-
-
-
-.third-content {
-    margin: 70px auto;
-    padding: 20px;
-    max-width: 800px;
-}
-
-.approach-text {
-    margin: 50px auto;
+.grid div {
+    border: solid rgb(68, 65, 65) 2px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(167, 154, 154);
     text-align: center;
-    padding: 20px;
+    vertical-align: middle;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 52px;
+}
+
+.scoreContainer {
+    margin-top: 60px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.header {
+    font-size: 60px;
+    margin-top: 50px;
+    text-align: center;
     font-weight: bold;
 }
 
-.fourth-content {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 50px auto;
-    max-width: 1200px;
-}
-
-.section {
-    flex: 1;
-    min-width: 250px;
-    max-width: 30%;
-    background-color: rgb(68, 62, 62);
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid red;
-}
-
-.fifth-content {
-    margin: 50px auto;
-    padding: 20px;
-    max-width: 800px;
+.instructions {
     text-align: center;
+    margin: auto;
 }
 
-.sixth-content {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 50px auto;
-    max-width: 1000px;
-}
-
-.sixth-content .section {
-    flex: 1;
-    min-width: 300px;
-    background-color: #4c4343;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid yellow;
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-}
-
-.sixth-content .section:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-    background-color: rgba(88, 78, 78, 0.9);
-}
-
-h1, h2, h3, h5, h6 {
-    margin-bottom: 10px;
-}
-
-p {
-    margin-bottom: 15px;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes slideUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.sticky-icon {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 9999;
-    padding: 10px;
-    font-size: 50px;
-    color: white;
-    animation: fadeIn 1s ease-out;
-    margin-bottom: 20px;
-}
-
-.sticky-icon i {
-    color: white;
-    transition: transform 0.3s ease-in-out;
-}
-
-.sticky-icon:hover i {
-    transform: scale(1.2);
-}
-
-.image-container {
+#result {
     text-align: center;
-    margin: 50px auto;
-}
-
-.image-container img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-.video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0; 
-}
-.video-container video {
-    width: 50%;  
-    height: auto; 
-    max-width: 600px; 
+    margin: auto;
 }
